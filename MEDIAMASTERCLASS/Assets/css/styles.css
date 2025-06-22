@@ -1,0 +1,334 @@
+:root {
+    --bg: #ffffff;
+    --primary: #e63946;
+    --text: #2b2b2b;
+    --accent: #f5f5f5;
+    --secondary: #2b2b2b;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--secondary);
+    padding: 100px 0;
+    color: var(--bg);
+    padding-top: 156px; /* Adjusted for fixed navbar */
+}
+
+.hero-section h1 {
+    text-shadow: none;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--bg);
+}
+
+.about-section img {
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.about-section img:hover {
+    transform: scale(1.02);
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: var(--accent);
+}
+
+.blockquote {
+    border-left: 4px solid var(--primary);
+    padding-left: 20px;
+}
+
+/* Registration Section */
+.registration-section {
+    background-color: var(--bg);
+}
+
+.card {
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+    background: var(--bg);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 0.2rem rgba(58, 80, 107, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Alert Styling */
+.alert-warning {
+    background-color: var(--bg);
+    border: 1px solid #ddd;
+    color: var(--text);
+}
+
+.alert-warning .alert-heading {
+    color: var(--text);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .about-section img {
+        margin-bottom: 30px;
+    }
+}
+
+/* Toast Styling */
+.toastify {
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    background: var(--secondary);
+    color: var(--bg);
+}
+
+.toastify.success {
+    background: var(--secondary);
+    border-left: 4px solid #2ecc71;
+}
+
+.toastify.error {
+    background: var(--secondary);
+    border-left: 4px solid var(--primary);
+}
+
+/* Additional Elegant Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.lead {
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--text);
+}
+
+/* Phone Input Styling */
+.iti {
+    width: 100%;
+}
+
+.iti__flag-container {
+    display: flex;
+    align-items: center;
+}
+
+.iti__selected-flag {
+    padding: 0 12px;
+    border-right: 1px solid #ddd;
+}
+
+.iti__country-list {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iti__country:hover {
+    background-color: var(--accent);
+}
+
+.iti__country.iti__active {
+    background-color: #f0f0f0;
+}
+
+/* Ensure the phone input takes full width */
+#phone {
+    padding-left: 90px !important;
+    width: 100%;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--secondary);
+}
+
+.footer h5 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer a {
+    transition: opacity 0.3s ease;
+    color: var(--bg);
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
+
+.footer hr {
+    opacity: 0.1;
+}
+
+.footer .fab {
+    font-size: 1.2rem;
+}
+
+/* Countdown Timer Styling */
+.countdown-timer {
+    padding: 20px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(43, 43, 43, 0.7); /* secondary with alpha */
+    transition: all 0.3s ease;
+    padding: 8px 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--bg) !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive Navigation */
+@media (max-width: 991px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .navbar-logo {
+        height: 35px;
+    }
+    
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+    }
+}
+
+/* Fix for mobile menu */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.brand-text {
+    color: var(--bg);
+} 

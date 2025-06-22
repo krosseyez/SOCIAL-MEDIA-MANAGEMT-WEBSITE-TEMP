@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Masterclass - Unlock Your Future</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- IntlTelInput CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="https://via.placeholder.com/150x50.png?text=YourLogo" alt="Your Logo" class="navbar-logo">
+                <span class="brand-text">Your Brand</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Masterclass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <header class="hero-section text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <img src="https://via.placeholder.com/1200x400" alt="Masterclass Banner" class="img-fluid rounded mb-4">
+                    <h1 class="display-4 fw-bold mb-3">Unlock Your Future: Join Our Masterclass</h1>
+                    <p class="lead">A one-day immersive experience with industry leaders. Secure your seat today.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="About Masterclass" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">About the Masterclass</h2>
+                    <p class="lead">Join our expertly designed masterclass aimed at professionals, creatives, and entrepreneurs. You'll gain actionable insights, network with like-minded individuals, and leave inspired and ready for more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <blockquote class="blockquote">
+                        <p class="mb-0 fs-4 fst-italic">"Tell me and I forget. Teach me and I remember. Involve me and I learn."</p>
+                        <footer class="blockquote-footer mt-3">Benjamin Franklin</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration-section py-5">
+        <div class="container">
+            <!-- Countdown Timer -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-4">Registration Deadline</h3>
+                            <div class="countdown-timer mb-4">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="countdown-item">
+                                            <span id="days" class="countdown-number">00</span>
+                                            <span class="countdown-label">Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="countdown-item">
+                                            <span id="hours" class="countdown-number">00</span>
+                                            <span class="countdown-label">Hours</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="countdown-item">
+                                            <span id="minutes" class="countdown-number">00</span>
+                                            <span class="countdown-label">Minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="countdown-item">
+                                            <span id="seconds" class="countdown-number">00</span>
+                                            <span class="countdown-label">Seconds</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Registration Form -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Registration Form</h3>
+                            <form id="registrationForm" name="contact-form">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" name="firstName" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" name="lastName" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="Email" class="form-label">Email Address</label>
+                                        <input type="email" name="Email" class="form-control" id="Email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                                        <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Motivation" class="form-label">Why do you want to join this masterclass?</label>
+                                    <textarea name="Motivation" class="form-control" id="Motivation" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Info -->
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Secure Your Spot</h3>
+                            <p class="lead">After registering, an email will be sent to you with the official payment link. Payments must be made to confirm your participation.</p>
+                            
+                            <div class="alert alert-warning mt-4">
+                                <h4 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> Important</h4>
+                                <p class="mb-0">Do not send payment to any unofficial links or agents. We are not responsible for lost funds due to fake or third-party payment requests. When in doubt, contact us directly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-5 bg-black text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="text-white text-decoration-none d-flex align-items-center mb-2">
+                        <i class="fab fa-linkedin me-2"></i>
+                        Follow Us on LinkedIn
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Contact</h5>
+                    <p class="mb-1">Email: contact@youragency.com</p>
+                    <p class="mb-0">Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Your Agency. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- IntlTelInput JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <!-- Custom JS -->
+    <script src="Assets/js/index.js"></script>
+</body>
+</html> 

@@ -30,6 +30,10 @@ The masterclass registration form is set up as a front-end template only. If you
 - All previous images and sensitive files have been removed.
 - There are no personal or private details in this template.
 
+ ## Image Warning ⚠️
+Important: All images must be placed in the Assets/images/ directory (or your designated assets folder).
+Placeholder images (https://via.placeholder.com/) are used by default. To customize the site, replace these with your own images in the appropriate folder and update the file paths accordingly in the HTML/CSS files.
+
 ## Ready to Go
 You can now safely share or deploy this template anywhere!
 
